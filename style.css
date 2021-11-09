@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #1b1b1b;
+}
+
 header {
     background-image: url('images/pattern-bg.png');
     background-repeat: no-repeat;
@@ -18,6 +22,7 @@ header h1 {
 }
 
 form {
+    justify-content: center;
     padding-top: 30px;
 }
 
@@ -28,7 +33,7 @@ form input {
     height: 40px;
     outline: none;
     padding: 0 10px;
-    width: 60%;
+    width: 50%;
 }
 
 form button {
@@ -37,7 +42,43 @@ form button {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
-    width: 6%;
+    width: 5%;
+}
+
+.ip-info {
+    background-color: #fff;
+    border-radius: 25px;
+    justify-content: space-around;
+    left: 50%;
+    padding: 50px 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    z-index: 500;
+}
+
+.ip-info span {
+    color: #1b1b1b;
+    display: block;
+    font-size: 24px;
+}
+
+.ip-info p {
+    color: #a3a3a3;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ip-info .divider {
+    background: #a3a3a3;
+    height: 50px;
+    width: 2px;
+}
+
+#map { height: 100vh; }
+
+section {
+    position: relative;
 }
 
 .container {
@@ -47,5 +88,5 @@ form button {
 
 .flex-container {
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }

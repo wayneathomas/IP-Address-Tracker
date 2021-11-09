@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <title>IP Address Tracker</title>
 </head>
 
@@ -18,11 +20,23 @@
         <div class="container">
             <h1>IP Address Tracker</h1>
             <form class="flex-container">
-                <input type="text" name="" id="ip-address-input">
+                <input type="text" placeholder="Search for any IP address" name="" id="ip-address-input">
                 <button type="submit"><img width="16" src="images/magnifier.png" alt=""></button>
             </form>
         </div>
     </header>
+    <section>
+        <div class="ip-info flex-container">
+            <p>IP ADDRESS<span id="ipAddress">192.212.174.101</span></p>
+            <div class="divider"></div>
+            <p>LOCATION<span id="cityRegion">Brooklyn, NY 10001</span></p>
+            <div class="divider"></div>
+            <p>TIMEZONE<span id="timeZone">UTC-5:00</span></p>
+            <div class="divider"></div>
+            <p>ISP<span id="isp">SpaceX Starlink</span></p>
+        </div>
+        <div id="map"></div>
+    </section>
     <script src="index.js"></script>
 </body>
 
